@@ -1,108 +1,71 @@
 body {
+    background: #001f77;
+    font-family: Arial;
     margin: 0;
-    padding: 0;
-    background: #00158f; 
-    font-family: "Righteous", sans-serif;
-}
-
-.container {
-    width: 85%;
-    max-width: 900px;
-    margin: auto;
-    padding-top: 30px;
+    padding: 20px;
+    color: white;
 }
 
 .judul {
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold;
     margin-bottom: 20px;
-    text-decoration: underline;
-    font-family: "Archivo Black", sans-serif;
-    color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
 }
 
 .card {
-    background: #5234ff;
-    padding: 40px;
-    border-radius: 10px;
+    background: #5327d9;
+    padding: 20px;
+    border-radius: 15px;
     display: flex;
-    gap: 25px;
-    color: white;
+    gap: 20px;
+    flex-wrap: wrap; /* BIAR RESPONSIVE */
 }
 
-.left img {
-    width: 180px;
-    height: 220px;
-    border-radius: 50px;
+.foto {
+    width: 150px;
+    height: 200px;
+    border-radius: 15px;
     object-fit: cover;
-    border: 3px solid white;
+    background: #fff;
 }
 
-.right table {
-    width: 100%;
-    font-size: 18px;
+.info-kiri, .info-kanan {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 17px;
 }
 
-.right td {
-    padding: 5px 0;
-}
-
-.riwayat-judul {
-    margin-top: 25px;
-    font-size: 22px;
+.info-kiri {
     font-weight: bold;
-    text-decoration: underline;
-    font-family: "Archivo Black", sans-serif;
-    color: white;
 }
 
-.riwayat {
-    background: #0059ff;
-    list-style: none;
-    padding: 15px 20px;
-    border-radius: 10px;
-    color: white;
-    font-size: 18px;
+/* BOX RIWAYAT PENDIDIKAN */
+.pendidikan {
+    background: #0077ff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 25px;
 }
 
-.riwayat li {
-    padding: 5px 0;
+.pendidikan h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
 }
 
-/* ============================
-   RESPONSIVE UNTUK HP
-=============================== */
-@media (max-width: 768px) {
-
+/* RESPONSIVE HP */
+@media (max-width: 600px) {
     .card {
         flex-direction: column;
-        padding: 20px;
+        align-items: center;
         text-align: center;
     }
 
-    .right table {
-        width: 100%;
-        font-size: 16px;
-        text-align: left;
-    }
-
-    .left img {
-        width: 150px;
-        height: 190px;
-        margin: auto;
-    }
-
-    .container {
-        width: 95%;
-        padding-top: 20px;
-    }
-
-    .judul {
-        font-size: 35px;
-    }
-
-    .riwayat {
-        font-size: 16px;
-    }
-}
+    .info-kiri, .info-kanan {
+        text-ali
