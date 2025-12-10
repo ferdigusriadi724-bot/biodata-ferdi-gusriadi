@@ -1,71 +1,70 @@
 body {
-    background: #001f77;
-    font-family: Arial;
     margin: 0;
-    padding: 20px;
-    color: white;
+    padding: 0;
+    background: #00158f; 
+    font-family: "Righteous", sans-serif;
+}
+
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 30px;
 }
 
 .judul {
     text-align: center;
-    font-size: 35px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
-}
-
-.container {
-    max-width: 900px;
-    margin: auto;
+    text-decoration: underline;
+    font-family: "Archivo black", sans-serif;
 }
 
 .card {
-    background: #5327d9;
-    padding: 20px;
-    border-radius: 15px;
+    background: #5234ff;
+    padding: 100px;
+    border-radius: 10px;
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap; /* BIAR RESPONSIVE */
+    gap: 25px;
+    color: white;
 }
 
-.foto {
-    width: 150px;
-    height: 200px;
-    border-radius: 15px;
+.left img {
+    width: 180px;
+    height: 220px;
+    border-radius: 50px;
     object-fit: cover;
-    background: #fff;
+    border: 3px solid rgb(255, 255, 255);
 }
 
-.info-kiri, .info-kanan {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    font-size: 17px;
+
+.right table {
+    width: 150%;
+    font-size: 18px;
 }
 
-.info-kiri {
-    font-weight: bold;
+.right td {
+    padding: 5px 0;
 }
 
-/* BOX RIWAYAT PENDIDIKAN */
-.pendidikan {
-    background: #0077ff;
-    padding: 20px;
-    border-radius: 15px;
+.riwayat-judul {
     margin-top: 25px;
-}
-
-.pendidikan h2 {
-    margin-bottom: 10px;
     font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: "Archivo black", sans-serif;
 }
 
-/* RESPONSIVE HP */
-@media (max-width: 600px) {
-    .card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+.riwayat {
+    background: #0059ff;
+    list-style: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
 
-    .info-kiri, .info-kanan {
-        text-ali
+.riwayat li {
+    padding: 5px 0;
+}
